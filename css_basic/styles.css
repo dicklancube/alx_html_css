@@ -1,0 +1,42 @@
+/* Body as a flex container, stacked vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* make sure the layout fills the viewport */
+    margin: 0;
+  }
+  
+  /* Main as a flex container, side by side */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* allow main to take remaining space */
+  }
+  
+  /* Article takes 2/3 width */
+  article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  /* Aside takes 1/3 width */
+  aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  /* Optional styling to make it easier to see the layout */
+  header, footer {
+    background: #f2f2f2;
+    padding: 10px;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
